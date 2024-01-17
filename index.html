@@ -193,6 +193,12 @@ Error message and password prompt
 
 <li>$:/core</li>
 
+<li>$:/core/ui/SideBar/</li>
+
+<li>$:/core/ui/SideBar/More</li>
+
+<li>$:/core/ui/SideBar/Tools</li>
+
 <li>$:/DefaultTiddlers</li>
 
 <li>$:/GitHub/Filename</li>
@@ -283,6 +289,8 @@ Error message and password prompt
 
 <li>How can I contribute?</li>
 
+<li>Index</li>
+
 <li>Testing Transclusion.</li>
 
 <li>What is distribution?</li>
@@ -290,6 +298,8 @@ Error message and password prompt
 <li>Why distribution?</li>
 
 <li>Wiki Experimentation</li>
+
+<li>Wiki Top Bar Items</li>
 
 </ul>
 </p>
@@ -10241,6 +10251,46 @@ Error message and password prompt
     }
 }</pre>
 </div>
+<div created="20240117184818153" list="Contents]][[$:/core/ui/SideBar/Open]][[$:/core/ui/SideBar/Recent]][[$:/core/ui/SideBar/Projects]][[$:/core/ui/SideBar/Upcoming" modified="20240117185031476" tags="" title="$:/core/ui/SideBar/">
+<pre></pre>
+</div>
+<div caption="{{$:/language/SideBar/More/Caption}}" created="20240117175951966" modified="20240117175954233" tags="" title="$:/core/ui/SideBar/More">
+<pre>&lt;div class=&quot;tc-more-sidebar&quot;&gt;
+&lt;$macrocall $name=&quot;tabs&quot; tabsList=&quot;[all[shadows+tiddlers]tag[$:/tags/MoreSideBar]!has[draft.of]]&quot; default={{$:/config/DefaultMoreSidebarTab}} state=&quot;$:/state/tab/moresidebar&quot; class=&quot;tc-vertical tc-sidebar-tabs-more&quot; explicitState=&quot;$:/state/tab/moresidebar-1850697562&quot;/&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<div caption="{{$:/language/SideBar/Tools/Caption}}" created="20240117180251217" modified="20240117180253605" tags="" title="$:/core/ui/SideBar/Tools">
+<pre>\define lingo-base() $:/language/ControlPanel/
+\define config-title()
+$:/config/PageControlButtons/Visibility/$(listItem)$
+\end
+
+&lt;&lt;lingo Basics/Version/Prompt&gt;&gt; &lt;&lt;version&gt;&gt;
+
+&lt;$set name=&quot;tv-config-toolbar-icons&quot; value=&quot;yes&quot;&gt;
+
+&lt;$set name=&quot;tv-config-toolbar-text&quot; value=&quot;yes&quot;&gt;
+
+&lt;$set name=&quot;tv-config-toolbar-class&quot; value=&quot;&quot;&gt;
+
+&lt;$list filter=&quot;[all[shadows+tiddlers]tag[$:/tags/PageControls]!has[draft.of]]&quot; variable=&quot;listItem&quot;&gt;
+
+&lt;div style=&quot;position:relative;&quot; class={{{ [&lt;listItem&gt;encodeuricomponent[]addprefix[tc-btn-]] }}}&gt;
+
+&lt;$checkbox tiddler=&lt;&lt;config-title&gt;&gt; field=&quot;text&quot; checked=&quot;show&quot; unchecked=&quot;hide&quot; default=&quot;show&quot;/&gt; &lt;$transclude tiddler=&lt;&lt;listItem&gt;&gt;/&gt; &lt;i class=&quot;tc-muted&quot;&gt;&lt;$transclude tiddler=&lt;&lt;listItem&gt;&gt; field=&quot;description&quot;/&gt;&lt;/i&gt;
+
+&lt;/div&gt;
+
+&lt;/$list&gt;
+
+&lt;/$set&gt;
+
+&lt;/$set&gt;
+
+&lt;/$set&gt;
+</pre>
+</div>
 <div bag="default" created="20201212165857364" modified="20240116225550585" revision="0" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki">
 <pre>[[What is distribution?]] [[Why distribution?]][[Community Projects]]</pre>
 </div>
@@ -12466,11 +12516,11 @@ Error message and password prompt
 <div created="20240116230514080" modified="20240116230514751" title="$:/state/image-picker/system-1393271786">
 <pre>hide</pre>
 </div>
-<div created="20240116220618483" modified="20240117005643848" title="$:/state/notebook-sidebar">
+<div created="20240116220618483" modified="20240117184214275" title="$:/state/notebook-sidebar">
 <pre>yes</pre>
 </div>
-<div created="20240116220620681" modified="20240117175232835" title="$:/state/notebook-sidebar-section">
-<pre></pre>
+<div created="20240116220620681" modified="20240117184801771" title="$:/state/notebook-sidebar-section">
+<pre>Contents</pre>
 </div>
 <div created="20240117004252658" modified="20240117004255270" title="$:/state/plugin-info-334910430-$:/core">
 <pre>yes</pre>
@@ -12493,25 +12543,25 @@ Error message and password prompt
 <div created="20240116221237835" modified="20240117012751002" title="$:/state/tab--1963855381">
 <pre>$:/core/ui/ControlPanel/Palette</pre>
 </div>
-<div created="20240116221235779" modified="20240117175229256" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Info</pre>
+<div created="20240116221235779" modified="20240117012756449" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Saving</pre>
 </div>
 <div created="20240117012815457" modified="20240117173749336" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
-<div created="20240116220700466" modified="20240117175212145" title="$:/state/tab/moresidebar-1850697562">
+<div created="20240116220700466" modified="20240117180135182" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/All</pre>
 </div>
 <div created="20240116221420187" modified="20240117012733354" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
 </div>
-<div created="20240116230451029" modified="20240117175031016" title="$:/state/toc/TableOfContents-Wiki Experimentation--1621497151">
-<pre>open</pre>
+<div created="20240116230451029" modified="20240116230452238" title="$:/state/toc/TableOfContents-Wiki Experimentation--1621497151">
+<pre>close</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20240117175104668" list="" modified="20240117175225841" title="$:/StoryList">
+<div created="20240117175401204" list="$:/core/ui/SideBar/ $:/core/ui/SideBar/Open" modified="20240117184701909" title="$:/StoryList">
 <pre></pre>
 </div>
 <div bag="default" created="20201218161619312" list="$:/core/ui/PageTemplate/topleftbar $:/core/ui/PageTemplate/toprightbar [[Projectify Intro]] $:/core/ui/PageTemplate/story $:/core/ui/PageTemplate/alerts $:/core/ui/PageTemplate/drafts $:/core/ui/PageTemplate/pluginreloadwarning $:/themes/nico/notebook/ui/Bottombar $:/themes/nico/notebook/ui/Buttons/menu $:/themes/nico/notebook/ui/Sidebar $:/themes/nico/notebook/ui/Topbar" modified="20201219110914700" revision="0" title="$:/tags/PageTemplate" type="text/vnd.tiddlywiki">
@@ -12963,7 +13013,7 @@ Error message and password prompt
 <div bag="default" created="20201219112001235" modified="20240116225022369" revision="0" title="Community Projects" type="text/vnd.tiddlywiki">
 <pre>{{$:/plugins/nico/projectify/ui/dashboard/Dashboard}}</pre>
 </div>
-<div created="20240116222344811" modified="20240117175144217" tags="$:/tags/SideBar" title="Contents">
+<div created="20240116222344811" modified="20240116222350649" tags="$:/tags/SideBar" title="Contents">
 <pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
 
 &lt;&lt;toc-selective-expandable 'TableOfContents'&gt;&gt;
@@ -12972,6 +13022,9 @@ Error message and password prompt
 </div>
 <div created="20240116225749338" modified="20240116225807595" tags="" title="How can I contribute?">
 <pre>Good question.</pre>
+</div>
+<div created="20240117175832109" modified="20240117175933960" tags="TableOfContents" title="Index">
+<pre>{{$:/core/ui/SideBar/More}}</pre>
 </div>
 <div created="20240116230143265" modified="20240116230629526" tags="[[Wiki Experimentation]]" title="Testing Transclusion.">
 <pre>{{How can I contribute?}}
@@ -12995,6 +13048,11 @@ A world where there is enough to go around.</pre>
 </div>
 <div created="20240116230408651" modified="20240116230430479" tags="TableOfContents" title="Wiki Experimentation">
 <pre>Just trying some things out. I'll delete this section when I'm done.</pre>
+</div>
+<div created="20240117180144269" modified="20240117184609874" tags="[[System Settings]]" title="Wiki Top Bar Items">
+<pre>!!Choose which icons/buttons to display on the top bar of the wiki:
+
+{{$:/core/ui/SideBar/Tools}}</pre>
 </div>
 
 
