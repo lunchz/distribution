@@ -193,6 +193,8 @@ Error message and password prompt
 
 <li>$:/config/RelinkOnRename</li>
 
+<li>$:/config/SaveWikiButton/Filename</li>
+
 <li>$:/config/Tiddlers/TitleLinks</li>
 
 <li>$:/core</li>
@@ -283,6 +285,8 @@ Error message and password prompt
 
 <li>$:/state/toc/TableOfContents-Wiki Experimentation--1621497151</li>
 
+<li>$:/state/toc/TableOfContents/About-Concepts-1871113288</li>
+
 <li>$:/state/toc/TableOfContents/Editing the Wiki-Scraps-1871113288</li>
 
 <li>$:/status/RequireReloadDueToPluginChange</li>
@@ -313,17 +317,23 @@ Error message and password prompt
 
 <li>Announcements</li>
 
+<li>Archive</li>
+
 <li>Artificial Scarcity</li>
 
 <li>Chatroom</li>
 
 <li>Community Projects</li>
 
+<li>Concepts</li>
+
 <li>distribution principles</li>
 
 <li>Editing the Wiki</li>
 
 <li>FBI vs. Black Panthers</li>
+
+<li>Found Materials</li>
 
 <li>Fractal Generosity</li>
 
@@ -335,11 +345,13 @@ Error message and password prompt
 
 <li>How come it hasn't happened, yet?</li>
 
-<li>Identify raw materials that can be easily found for free.</li>
-
 <li>Index</li>
 
+<li>List items that are easy or common to find.</li>
+
 <li>prerequisites</li>
+
+<li>Protected Value</li>
 
 <li>Raw Materials</li>
 
@@ -451,8 +463,11 @@ Error message and password prompt
 <div created="20240117003559910" modified="20240117003559910" title="$:/config/projectify/ShowCompletedTodos">
 <pre>yes</pre>
 </div>
-<div bag="default" created="20201219111934703" modified="20240127023149503" revision="0" title="$:/config/RelinkOnRename" type="text/vnd.tiddlywiki">
-<pre>no</pre>
+<div bag="default" created="20201219111934703" modified="20240128220615455" revision="0" title="$:/config/RelinkOnRename" type="text/vnd.tiddlywiki">
+<pre>yes</pre>
+</div>
+<div created="20240127225058238" modified="20240127225113634" tags="" title="$:/config/SaveWikiButton/Filename">
+<pre>distribution.wiki</pre>
 </div>
 <div created="20240117004017168" modified="20240117004017168" title="$:/config/Tiddlers/TitleLinks">
 <pre>yes</pre>
@@ -12730,7 +12745,7 @@ wikilist-button-foreground: #161512</pre>
 <div created="20240116220618483" modified="20240127042707343" title="$:/state/notebook-sidebar">
 <pre>yes</pre>
 </div>
-<div created="20240116220620681" modified="20240127024929431" title="$:/state/notebook-sidebar-section">
+<div created="20240116220620681" modified="20240209155932374" title="$:/state/notebook-sidebar-section">
 <pre>TableOfContents</pre>
 </div>
 <div created="20240127042336877" modified="20240127042336877" title="$:/state/palettemanager/$:/palettes/DesertSand/site-title-foreground">
@@ -12745,7 +12760,7 @@ wikilist-button-foreground: #161512</pre>
 <div created="20240117003549326" modified="20240117003615021" title="$:/state/projectify/config-482715637">
 <pre>$:/plugins/nico/projectify/ui/config/Categories</pre>
 </div>
-<div category="" created="20240116214541812" description="" modified="20240127023612419" project_title="" title="$:/state/projectify/new-project">
+<div category="" created="20240116214541812" description="" modified="20240128215910722" project_title="" title="$:/state/projectify/new-project">
 <pre></pre>
 </div>
 <div created="20240116214532868" modified="20240123215959760" title="$:/state/projectify/QuickCapture" todo_name="">
@@ -12754,8 +12769,8 @@ wikilist-button-foreground: #161512</pre>
 <div created="20240117003741750" modified="20240117174924207" title="$:/state/projects-and-schedule-1114411535">
 <pre>$:/plugins/nico/projectify/ui/dashboard/InboxAndProjects</pre>
 </div>
-<div created="20240116222141406" modified="20240127040822689" title="$:/state/showeditpreview">
-<pre>no</pre>
+<div created="20240116222141406" modified="20240128210619984" title="$:/state/showeditpreview">
+<pre>yes</pre>
 </div>
 <div created="20240127035610105" modified="20240127035610105" title="$:/state/ShowPaletteEditor">
 <pre>yes</pre>
@@ -12763,11 +12778,11 @@ wikilist-button-foreground: #161512</pre>
 <div created="20240116221237835" modified="20240127041827642" title="$:/state/tab--1963855381">
 <pre>$:/core/ui/ControlPanel/Palette</pre>
 </div>
-<div created="20240116221235779" modified="20240127043059427" title="$:/state/tab-1749438307">
+<div created="20240116221235779" modified="20240127143340761" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Saving</pre>
 </div>
-<div created="20240117012815457" modified="20240127123844406" title="$:/state/tab-2065006209">
-<pre>$:/core/ui/ControlPanel/Saving/DownloadSaver</pre>
+<div created="20240117012815457" modified="20240127143348303" title="$:/state/tab-2065006209">
+<pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
 <div created="20240116220700466" modified="20240117175212145" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/All</pre>
@@ -12775,25 +12790,28 @@ wikilist-button-foreground: #161512</pre>
 <div created="20240116221420187" modified="20240120193353312" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/EditorToolbar</pre>
 </div>
-<div created="20240118021337846" modified="20240127020750413" title="$:/state/toc/TableOfContents-About-1871113288">
-<pre>close</pre>
+<div created="20240118021337846" modified="20240209172220783" title="$:/state/toc/TableOfContents-About-1871113288">
+<pre>open</pre>
 </div>
 <div created="20240122003712094" modified="20240122003712094" title="$:/state/toc/TableOfContents-About-497309061">
 <pre>open</pre>
 </div>
-<div created="20240117232129354" modified="20240124235804874" title="$:/state/toc/TableOfContents-Editing the Wiki-1871113288">
-<pre>close</pre>
+<div created="20240117232129354" modified="20240209173537157" title="$:/state/toc/TableOfContents-Editing the Wiki-1871113288">
+<pre>open</pre>
 </div>
 <div created="20240116230451029" modified="20240117175031016" title="$:/state/toc/TableOfContents-Wiki Experimentation--1621497151">
 <pre>open</pre>
 </div>
-<div created="20240121123438141" modified="20240124230318013" title="$:/state/toc/TableOfContents/Editing the Wiki-Scraps-1871113288">
-<pre>open</pre>
+<div created="20240209160012542" modified="20240209160021031" title="$:/state/toc/TableOfContents/About-Concepts-1871113288">
+<pre>close</pre>
+</div>
+<div created="20240121123438141" modified="20240209172218167" title="$:/state/toc/TableOfContents/Editing the Wiki-Scraps-1871113288">
+<pre>close</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20240127123842129" list="$:/ControlPanel Announcements About [[Community Projects]]" modified="20240127123842129" title="$:/StoryList">
+<div list="[[How can we make it happen?]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div bag="default" created="20201218161619312" list="$:/core/ui/PageTemplate/topleftbar $:/core/ui/PageTemplate/toprightbar [[Projectify Intro]] $:/core/ui/PageTemplate/story $:/core/ui/PageTemplate/alerts $:/core/ui/PageTemplate/drafts $:/core/ui/PageTemplate/pluginreloadwarning $:/themes/nico/notebook/ui/Bottombar $:/themes/nico/notebook/ui/Buttons/menu $:/themes/nico/notebook/ui/Sidebar $:/themes/nico/notebook/ui/Topbar" modified="20201219110914700" revision="0" title="$:/tags/PageTemplate" type="text/vnd.tiddlywiki">
@@ -13249,10 +13267,19 @@ wikilist-button-foreground: #161512</pre>
 <pre>!!What is distribution?
 {{What is distribution?}}</pre>
 </div>
-<div created="20240118022030236" modified="20240118120822167" tags="TableOfContents" title="Announcements">
+<div created="20240118022030236" modified="20240209154759889" tags="TableOfContents" title="Announcements">
 <pre>''List important announcements below, in order of importance:''
 
-* Nothing important to announce, right now.</pre>
+* There will likely be an influx of new users, soon, so please brace yourselves. Try not to be overwhelmed. 
+* ''New users:'' Not everyone who works for ''distribution'' is destined to become an ''editor'' of this wiki. Too many cooks spoil the broth. But it will be easy to communicate with ''editors'' to suggest edits and projects through the [[Chatroom]].
+* This is first and foremost a ''hub of learning''. Learn about our [[distribution principles]] and take that knowledge with you, or stay a while and see how well our cooperative energies can harmonize to organize concrete systems of ''resource distribution''.
+* Right now we are just growing interest in the concept of ''distribution'', but once the ''distribution'' [[Chatroom]] starts getting crowded we'll probably start separating into smaller groups based on location. We'll all stay in touch and continue to use the same resource distribution model, treating each ''distribution'' website as a ''hub'', with each website operating on it's own while keeping in touch with others and communicating between them to coordinate transportation and things like that.</pre>
+</div>
+<div created="20240128181039437" modified="20240210133330802" tags="[[Editing the Wiki]]" title="Archive">
+<pre>The archives preserve a library of previous versions of this website. This helps keep track of which changes have been made, and preserves a detailed history, to ensure this wiki and the community projects it facilitates can remain resilient to sabotage.
+
+[[The Archive|https://tilde.camp/distribution/archive.php]]
+</pre>
 </div>
 <div created="20240120171204184" modified="20240126134631745" tags="About" title="Artificial Scarcity">
 <pre>---
@@ -13326,10 +13353,15 @@ If you want to give us your contact information, you can PRIVATE MESSAGE it to '
 
 ''Remember:'' //''DO NOT''// use the ''@ sign'', that's not part of the username.</pre>
 </div>
-<div bag="default" created="20201219112001235" modified="20240117185353579" revision="0" tags="TableOfContents" title="Community Projects" type="text/vnd.tiddlywiki">
-<pre>{{$:/plugins/nico/projectify/ui/dashboard/Dashboard}}</pre>
+<div bag="default" created="20201219112001235" modified="20240209124626965" revision="0" tags="TableOfContents" title="Community Projects" type="text/vnd.tiddlywiki">
+<pre>{{$:/plugins/nico/projectify/ui/dashboard/Dashboard}}
+
+Since we use &quot;projects&quot; as broader categories on this website, the little pie graphs that say what percent of the project is done are ''not'' accurate unless we ''archive'' the todo task. The easiest way to do that is to remove the &quot;todo&quot; tag once something is marked &quot;done&quot;. Anything marked only &quot;done&quot; was obviously a todo task, so the ''todo'' label is redundant at that point, anyways. This will remove that todo task from the project, so the pie graph can accurately determine how many ''recent'' tasks have been completed.</pre>
 </div>
-<div created="20240122000148129" modified="20240125142324688" tags="Scraps" title="distribution principles">
+<div created="20240209160001718" modified="20240209160009278" tags="About" title="Concepts">
+<pre></pre>
+</div>
+<div created="20240122000148129" modified="20240209160017966" tags="Scraps Concepts" title="distribution principles">
 <pre>!distribution
 
 ''distribution'' means practicing generosity in the spirit that ''there is enough to go around'' --- if only we would circulate resources //responsibly// and //without self-interest//. These resources include information, love, and good energy, among other material and immaterial resources. 
@@ -13370,7 +13402,7 @@ The forces of self-interest (including your own) would have us believe that busi
 
 Also, we try not to let our actions be guided by pity, as these efforts can become endlessly sunk into the neediest of people in a needy world. This can result in loss of faith, &quot;burn-out&quot;, and resentment. But by focusing on rewarding those who are themselves incredibly giving, the resources are destined to spread out regardless.</pre>
 </div>
-<div created="20240117232000121" modified="20240122204034680" tags="TableOfContents" title="Editing the Wiki">
+<div created="20240117232000121" list="[[Recent Edits]] Scraps Archives" modified="20240128185413371" tags="TableOfContents" title="Editing the Wiki">
 <pre>!!Caution:
 
 Anyone is welcome to view the wiki, or participate in the [[Chatroom]]. But only ''editors'' have permission to ''edit'' the wiki.
@@ -13424,14 +13456,30 @@ Remember, the wiki is made up of ''articles'' that must each be saved separately
 
 !!Adding a new article
 
-!!Templates</pre>
+!!Templates
+
+!!Comparing Versions
+
+[[Archives]]</pre>
 </div>
 <div created="20240122134400720" modified="20240122134817572" tags="Scraps" title="FBI vs. Black Panthers">
 <pre>Free food seemed relatively innocuous, but not to FBI head J. Edgar Hoover, who loathed the Black Panther Party and declared war against them in 1969. He called the program “potentially the greatest threat to efforts by authorities to neutralize the BPP and destroy what it stands for,”
 
 https://www.history.com/news/free-school-breakfast-black-panther-party</pre>
 </div>
-<div created="20240120181346648" modified="20240122160347938" title="Fractal Generosity">
+<div category="" created="20240128215910719" description="" modified="20240128220733459" tags="Project" title="Found Materials">
+<pre>---
+''Purpose:'' So far, to brainstorm and list materials that are commonly found, listed as items that are found in just that form. Then brainstorm how to repair, process, disassemble, or upcycle them to put them to best use.
+
+---
+
+!!Found Materials
+
+''Found Materials'' are things that can be easily found, and are referred to as items that are in the same condition as they were when they were ''found''.
+
+That means this will not necessarily be [[Raw Materials]], yet. ''Found Materials'' likely need to be [[Disassembled]] or [[Processed]] before they constitute [[Raw Materials]].</pre>
+</div>
+<div created="20240120181346648" modified="20240209155929287" tags="Scraps" title="Fractal Generosity">
 <pre>''Fractal Generosity'' means being generous, but prioritizing being most generous to the most generous --- especially those who are themselves prioritizing being generous to the most generous.
 
 This involves distributing resources disproportionately towards the people who are the most likely to pay-it-forward, and especially towards those who also embody this ''distribution principle'' in their own actions.
@@ -13728,7 +13776,7 @@ If you've reached a ''full understanding'' and read all the above articles, plea
 
 ---</pre>
 </div>
-<div created="20240118164215794" modified="20240127020712200" tags="About" title="How come it hasn't happened, yet?">
+<div created="20240118164215794" modified="20241004133750765" tags="About" title="How come it hasn't happened, yet?">
 <pre>---
 
 This article's ''prerequisites:''
@@ -13764,7 +13812,7 @@ This is problematic for empowering the gift economy, because every gift circulat
 
 Basically, any value that is &quot;up for grabs&quot; and is not somehow &quot;protected&quot; can easily be taken out of circulation from the collective gift economy and used for personal gain within the market economy.
 
-However, there //can// be systems of organization that could support the gift economy despite the threat of recuperation - they just have to be built with that in mind. Some of these systems we've already come up with, but mostly still in the experimental stages.
+However, there //can// be systems of organization that could support the gift economy despite the threat of recuperation - they just have to be built with that in mind. Which is why we've introduced the concept of [[Protected Value]]. Some of these systems we've already come up with, but they're mostly still in the experimental stages.
 
 !!Authorities
 
@@ -13774,16 +13822,32 @@ Governments function a lot like businesses. Politicians depend on funding, often
 
 Governments also feel the need to keep up their economic power and military might in comparison to other countries, so that they won't be overtaken or externally controlled, and maintain their own control over resources where possible. This means any threat to their profits is met with extreme resistance, and is considered a threat to &quot;national security&quot;. So as the gift economy expands, and the GDP stops climbing, they may come to see the gift economy as a threat to being overtaken by outside powers. The easiest way to prevent this issue is to make sure the gift economy is catching on at roughly the same pace in every country in the world.
 
-!!COINTELPRO
+!!Counter-intelligence
 
-The term ''COINTELPRO'' stands for ''co''unter ''intel''ligence ''pro''gram. Oftentimes the term is used to refer to a specific counter-intelligence program that was executed against American citizens by the FBI in the 60s and 70s.
+Ironically, the &quot;intelligence agencies&quot; like the CIA, the FBI, and the NSA, are all more involved with &quot;counter-intelligence&quot; than &quot;intelligence&quot;. It turns out it's very difficult to get good intelligence, as seen when Saddam Hussein was falsely accused of having weapons of mass destruction. The purpose of &quot;intelligence agencies&quot;, for this reason, has more to do with convincing people of a lie to prevent them from learning the truth. Like when, during the Iraq war, the military bombed a medical facility and told everyone it was a bomb factory.
 
-* COINTELPRO hate mail
-* Free Breakfast program.
-* In prison for feeding people.
+In a world where information is so abundant, and so accessible, it's easier to confuse the population than it is to prevent them from learning about stuff. So instead of &quot;hiding&quot; things, they just bombard you with a lot of conflicting and confusing information to make it a lot harder to find the actual truth. They do this to everyone in the world, to try and prevent their power from being questioned and unseated, through commercials, movies, TV shows, repeating news stories, all being manipulated by subtle influences from behind the scenes. This is not a conspiracy, this is just the natural influence that anyone in power has from their own authority --- they are not refused interviews, they are not slandered on the news, they are not discounted as crackpots --- instead their words are closely listened to, recorded, and displayed for all to see.
 
-&quot;One of the greatest threats to the nation's internal security.&quot;
+!!Free Breakfast Program
+
+Free food seems relatively innocuous, but not to FBI head J. Edgar Hoover, who loathed the Black Panther Party and declared war against them in 1969. He called the program “potentially the greatest threat to efforts by authorities to neutralize the BPP and destroy what it stands for”.
+
+You may have heard the term ''COINTELPRO''. That stands for ''co''unter ''intel''ligence ''pro''gram. Oftentimes the term is used to refer to a specific counter-intelligence program that was executed against American citizens by the FBI in the 60s and 70s. This program used forged hate mail among other things to spread rumors, hate, and drama, and effectively broke up the Black Panthers just for doing basic things like defending themselves and feeding each other.
+
+https://www.history.com/news/free-school-breakfast-black-panther-party
+
+There's also an anarchist decentralized organization called Food Not Bombs that simply goes to parks and feeds homeless people. But over the years several states and cities have tried to outlaw feeding the homeless, for some reason, and some Food Not Bombs activists are even in prison for it.
+
+This just illustrates how the difficulty we have in sharing with each other, and taking care of each other outside of the capitalist paradigm, has not naturally fallen by the wayside. Economic forces and violent oppression are constantly at work to prevent anyone from sharing resources, as if the very thought of it could cause our whole civilization to collapse. After all, feeding the homeless simultaneously exposes capitalism for not meeting our needs to begin with, as well as directly meeting our needs right then and there, so the whole spectacle of it disgraces capitalism and causes capitalist forces to converge to defend itself.
+
+This is why such a technical and well-thought-out approach to education and tactics needs to be implemented, such as these distribution principles. It's not enough to just &quot;think with your heart&quot; when violent armed forces are going to find you and destroy all that is good in the world. We need to directly serve each other and directly meet our needs, but we have to do it in a decentralized manner that is happening constantly to prevent any bottleneck in the operation that can be attacked from economic forces that are trying to protect capitalism.
+
+After all, here's what J Edgar Hoover had to say about the &quot;Free Breakfast Program&quot;:
+
+&quot;...One of the greatest threats to the nation's internal security.&quot;
    --- J Edgar Hoover
+
+People being arrested for feeding the homeless, ''still'', in 2024.
 
 &lt;img style=&quot;text-align:center;&quot; src=&quot;https://i.imgur.com/AVCIs5k.png&quot; /&gt;
 
@@ -13986,14 +14050,53 @@ This is what is protected value.
 
 </pre>
 </div>
-<div created="20240127024756857" due="" modified="20240127040001075" priority="" tags="[[Raw Materials]] todo" title="Identify raw materials that can be easily found for free.">
-<pre>Which materials?
-
-* Wooden pallets
-* plastic bags</pre>
-</div>
 <div created="20240117191720560" modified="20240117191802259" tags="" title="Index">
 <pre>{{$:/core/ui/SideBar/More}}</pre>
+</div>
+<div created="20240128220532177" due="" modified="20240128224137238" priority="" tags="[[Found Materials]] todo" title="List items that are easy or common to find.">
+<pre>List them as the items they are commonly found as, nothing more disassembled or processed. Those are next steps for another project.
+
+Which materials?
+
+!!Thoughts
+
+How can we just... well we need to categorize the different 'tasks' of getting and redistributing raw materials. Those categories could include:
+
+!!Raw Materials
+* Scavenging
+* Dismantling
+* Organizing
+* Learning
+* Creating
+---
+!!Food
+* Foraging
+* Gardening
+* Rearing
+* Preparing
+* Cooking
+* Serving
+* Transporting
+
+---
+!!Processed materials:
+
+* Wooden pallets
+* plastic bags
+* Cardboard
+
+!!Organic materials:
+* Acorns
+
+
+```
+
+Editor's Note:
+There is no rhyme or reason on this article, yet. So feel free to reorganize it, if you think of a better way to do it. - It will probably be turned into a 'project' once it's better organized and thought-out.
+
+
+```
+</pre>
 </div>
 <div created="20240118142658139" modified="20240122002854993" tags="" title="prerequisites">
 <pre># [[What is wrong with the market economy?|The Market Economy]]
@@ -14003,9 +14106,12 @@ This is what is protected value.
 # [[How can we make it happen?]]
 </pre>
 </div>
-<div category="" created="20240127023612417" description="An ongoing project to facilitate the distribution of basic raw materials that can be used to create anything." modified="20240127024519638" tags="Project" title="Raw Materials">
+<div created="20240209175307401" modified="20240209175309702" tags="Concepts" title="Protected Value">
+<pre></pre>
+</div>
+<div category="" created="20240127023612417" description="An ongoing project to facilitate the distribution of basic raw materials that can be used to create anything." modified="20240128224011149" tags="Project" title="Raw Materials">
 <pre>!Raw Materials
-&lt;$view field=&quot;description&quot;/&gt;
+An ongoing project to facilitate the distribution of basic raw materials that can be used to create anything.
 
 !!Strategy
 
@@ -14164,7 +14270,7 @@ The more egalitarian motives we've come up with is prioritizing moving resources
 ----
 --&gt;</pre>
 </div>
-<div created="20240118143326602" modified="20240126122934710" tags="About" title="The Market Economy">
+<div created="20240118143326602" modified="20240209161012484" tags="About" title="The Market Economy">
 <pre>---
 
 This article's ''prerequisites:''
@@ -14206,7 +14312,7 @@ To bring it back to the basics, let's look at ''trade''. Trade appears to happen
 
 We have certain necessities that we will die without, so we are compelled to do whatever we have to do to meet those needs. This isn't really &quot;voluntary&quot;, because it's //necessary//, and time and time again we've seen how people's environments shape them and that people will do whatever it takes to survive. The coercion of capitalism is that it destroys the natural world, it destroys everything we depend on, it divides communities and pits people against each other, and then it offers to sell us back an empty replacement like a tiny apartment where we live alone and develop addictions to TV, sugar, coffee, alcohol, and youtube or instagram, to replace the community we've lost --- since it seems to be all that's left.
 
-This is the trick of ''exchange'' - it reduces the picture down to two economic entities and the commodities they are exchanging without taking into consideration anything about the humans involved or what their needs are. It doesn't consider the ''feedback loop'' of how &quot;making money&quot; invariably damages our environment, while our biological necessities compel us to survive at any cost, and then the only way to survive the damaged environment seems to be making more money --- further perpetuating the inequality and ecological destruction that the money was supposed to help us escape.
+This is the trick of ''exchange'' - it reduces the picture down to two economic entities and the commodities they are exchanging without taking into consideration anything about the humans involved or what their ''actual'' needs are. It doesn't consider the ''feedback loop'' of how &quot;making money&quot; invariably damages our environment, while our biological necessities compel us to survive at any cost, and then the only way to survive the damaged environment seems to be making more money --- further perpetuating the inequality and ecological destruction that the money was supposed to help us escape.
 
 The narrative of the ''exchange economy'' distracts us from the big picture. It focuses our attention on the exchange itself, rather than the people involved, and hides it's hidden costs and problems in the negative space surrounding the interaction.
 
@@ -14268,7 +14374,7 @@ Short version: we depend on people, we just don't depend on them individually be
 
 Write or rewrite this however you wish!</pre>
 </div>
-<div created="20240116215042967" modified="20240125143500528" tags="About" title="What is distribution?">
+<div created="20240116215042967" modified="20240209155314837" tags="About" title="What is distribution?">
 <pre>''distribution'' is a philosophy of resource distribution invented to facilitate the growth of the gift economy.
 
 This theory of ''distribution'' is meant to address the issue of the gift economy having it's value systematically absorbed by the market economy.
@@ -14316,7 +14422,11 @@ To reach a &quot;[[full understanding]]&quot;, read these articles in order:
 
 {{prerequisites}}
 
-''Why read all that!?'' Well, before you get more involved with ''distribution'', it's important you understand the concept of [[Protected Value]] -- so you can be sure you aren't diverting resources from the gift economy back into the market economy. But first you have to learn //''why''// value needs to be protected, //''what''// that value is being protected from, and //''how''// to protect it. So start by reading the short articles listed above.</pre>
+''Why read all that!?''
+
+Well, before you get more involved with ''distribution'', it's important you understand the concept of [[Protected Value]] -- so you can be sure you aren't diverting resources from the gift economy back into the market economy. But first you have to learn //''why''// value needs to be protected, //''what''// that value is being protected from, and //''how''// to protect it.
+
+So start by reading the short articles listed above.</pre>
 </div>
 <div created="20240116225150376" modified="20240118190234265" tags="" title="Why distribution?">
 <pre>We believe our collective crises of environmental problems and social problems will be much more easily solved once our ability to collaborate is no longer stunted by an individualistic and competitive economic system that encourages greed instead of generosity.
